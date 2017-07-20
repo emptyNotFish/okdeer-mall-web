@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OkdeerPsmsMallWebApplication {
+public class WebApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OkdeerPsmsMallWebApplication.class, args);
+		SpringApplication.run(WebApplication.class, args);
 	}
 }
