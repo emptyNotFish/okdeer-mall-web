@@ -1,4 +1,4 @@
-package com.okdeer.mall.utils;
+package com.okdeer.mall.file;
 
 
 import java.io.BufferedReader;
@@ -19,7 +19,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
-import com.okdeer.mall.exception.ServiceException;  
+import com.okdeer.mall.exception.ServiceException;
+import com.okdeer.mall.utils.CtsDateUtil;
+import com.okdeer.mall.utils.MD5EncoderUtil;  
 /** 
 *  
 * <b>类说明：文件操作工具类</b> 

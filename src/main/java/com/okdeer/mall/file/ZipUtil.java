@@ -1,4 +1,4 @@
-package com.okdeer.mall.utils;
+package com.okdeer.mall.file;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
