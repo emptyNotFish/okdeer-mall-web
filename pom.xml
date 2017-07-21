@@ -22,19 +22,105 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<!-- 用户中心api -->
+		<ca.version>1.1.0-SNAPSHOT</ca.version>
+		<base.version>0.1.0-SNAPSHOT</base.version>
 	</properties>
 
 	<dependencies>
+		<!-- boot配置导入 begin -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- 这个配置跟application启动和 shiro有关-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<!-- boot 集成redis -->
+		<dependency>
+			<groupId>org.springframework.session</groupId>
+			<artifactId>spring-session</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework.boot</groupId> 
+		    <artifactId>spring-boot-starter-data-redis</artifactId> 
+		</dependency>
+		
+		<!-- boot配置导入 end -->
+		<dependency>
+			<groupId>com.okdeer.ca</groupId>
+			<artifactId>okdeer-ca-api</artifactId>
+			<version>${ca.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>okdeer-base-common</artifactId>
+					<groupId>com.okdeer.base</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.okdeer.base</groupId>
+			<artifactId>okdeer-base-common</artifactId>
+			<version>${base.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.okdeer.base</groupId>
+			<artifactId>okdeer-base-web</artifactId>
+			<version>${base.version}</version>
+		</dependency>
+		<!-- jxls begin -->
+		<dependency>
+			<groupId>org.jxls</groupId>
+			<artifactId>jxls</artifactId>
+			<version>2.2.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jxls</groupId>
+			<artifactId>jxls-poi</artifactId>
+			<version>1.0.8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jxls</groupId>
+			<artifactId>jxls-jexcel</artifactId>
+			<version>1.0.5</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jxlpoi</groupId>
+			<artifactId>jxlpoi</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+		<!-- jxls end -->
+		<!-- shiro begin -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-ehcache</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-cas</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache-core</artifactId>
+			<version>2.6.6</version>
+		</dependency>
+		<!-- shiro end -->
 	</dependencies>
 
 	<build>

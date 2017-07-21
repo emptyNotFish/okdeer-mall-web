@@ -3,8 +3,9 @@ package com.okdeer.mall.utils;
 import java.util.Collection;
 import java.util.List;
 
-import org.assertj.core.internal.Lists;
 import org.dozer.DozerBeanMapper;
+
+import com.google.common.collect.Lists;
 
 /**
  * 简单封装Dozer, 实现深度转换Bean<->Bean的Mapper.实现:

@@ -1,0 +1,13 @@
+ca 用户中心 提供用户信息 以消息方式同步用户信息到本地数据库
+mcm 消息中心 数据库mongodb 发送短信 邮件等
+bdp 基础数据平台 提供用户地址信息
+
+pay 支付平台 云钱包
+
+ela 搜索服务 elasticsearch 搜索引擎
+
+sso 单点登录
+
+rocketmq 中间件mq
+
+ 

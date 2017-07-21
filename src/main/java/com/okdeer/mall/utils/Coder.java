@@ -72,17 +72,9 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 import java.math.BigInteger;
-import java.security.MessageDigest;
 
-import javax.crypto.KeyGenerator;
-import javax.crypto.Mac;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.SecretKeySpec;
-
-import org.junit.Test;
-
-import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;  
+import org.apache.commons.httpclient.util.URIUtil.Coder;
+import org.junit.Test;  
   
  /** 
   *  

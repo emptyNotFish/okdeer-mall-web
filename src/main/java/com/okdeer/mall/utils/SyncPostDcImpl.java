@@ -2,12 +2,14 @@ package com.okdeer.mall.utils;
 
 import java.util.Map;
 
+import org.apache.commons.httpclient.HttpClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpEntity;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import io.netty.handler.codec.http.HttpResponse;
 import net.minidev.json.JSONObject;
 
 /**

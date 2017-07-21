@@ -1,6 +1,13 @@
 package com.okdeer.mall.redis;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
+
+import com.alibaba.fastjson.serializer.SerializerFeature;
+
+import net.sf.json.JSON;
+import redis.clients.jedis.ShardedJedis;
+import redis.clients.jedis.ShardedJedisPool;
 /**
  * redis配置管理
  * @author Administrator

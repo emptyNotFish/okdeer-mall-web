@@ -8,7 +8,6 @@ import java.util.Date;
 
 import org.apache.commons.lang3.time.DateUtils;
 
-import com.lz.cts.common.errorcode.CtsErrorCode;
 import com.okdeer.mall.exception.ServiceException;  
 /** 
  *  
